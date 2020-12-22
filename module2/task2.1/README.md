@@ -55,9 +55,70 @@ Shared the USB drive and local folder:
 ![Sharing resources](./images/shared_folder.png "Shared folder")
 ![Sharing resources](./images/usb_shared.png "Shared USB")
 
-The resources are correctly mapped onto guest, the shared folder is mounted on /media/cdrom, and I mounted USB partition on /mnt/usbflash:
+The resources are correctly mapped onto guest, the shared folder is mounted on */media/cdrom*, and I mounted USB partition on */mnt/usbflash*:
 
-![Guest] (./images/guest.png "Guest") 
+![Guest](./images/guest.png "Guest") 
+
+Tried several networking modes and read about networking in VirtualBox:
+
+<table>
+<thead>
+  <tr>
+    <th colspan="7">Reachable<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="6"><br><br><br><br><br><br><br>Mode<br></td>
+    <td></td>
+    <td>VM to host</td>
+    <td>host to VM</td>
+    <td>VM1 to VM2</td>
+    <td>VM to Internet</td>
+    <td>Internet to VM</td>
+  </tr>
+  <tr>
+    <td>NAT</td>
+    <td>yes</td>
+    <td>via DNAT<br></td>
+    <td>no</td>
+    <td>yes<br></td>
+    <td>via DNAT</td>
+  </tr>
+  <tr>
+    <td>Bridged</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>yes</td>
+  </tr>
+  <tr>
+    <td>Internal</td>
+    <td>no</td>
+    <td>no</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+  </tr>
+  <tr>
+    <td>Host-only</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+  </tr>
+  <tr>
+    <td>NAT Network</td>
+    <td>yes</td>
+    <td>via DNAT<br></td>
+    <td>yes</td>
+    <td>yes<br></td>
+    <td>via DNAT</td>
+  </tr>
+</tbody>
+</table>
 
 Used CLI to mock manage VM1 via VBoxManage.
 
