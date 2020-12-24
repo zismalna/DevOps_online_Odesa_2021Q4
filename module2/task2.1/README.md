@@ -69,7 +69,7 @@ Tried several networking modes and read about networking in VirtualBox:
 </thead>
 <tbody>
   <tr>
-    <td rowspan="6"><br><br><br><br><br><br><br>Mode<br></td>
+    <td rowspan="6"><br>Mode<br></td>
     <td></td>
     <td>VM to host</td>
     <td>host to VM</td>
@@ -80,10 +80,10 @@ Tried several networking modes and read about networking in VirtualBox:
   <tr>
     <td>NAT</td>
     <td>yes</td>
-    <td>via DNAT<br></td>
+    <td>via port forwarding<br></td>
     <td>no</td>
     <td>yes<br></td>
-    <td>via DNAT</td>
+    <td>via port forwarding</td>
   </tr>
   <tr>
     <td>Bridged</td>
@@ -112,10 +112,10 @@ Tried several networking modes and read about networking in VirtualBox:
   <tr>
     <td>NAT Network</td>
     <td>yes</td>
-    <td>via DNAT<br></td>
+    <td>via port forwarding<br></td>
     <td>yes</td>
     <td>yes<br></td>
-    <td>via DNAT</td>
+    <td>via port forwarding</td>
   </tr>
 </tbody>
 </table>
@@ -124,7 +124,52 @@ Used CLI to mock manage VM1 via VBoxManage.
 
 # Work with Vagrant
 
+Installed Vagrant, initialized and started default Vagrant box:
 
+```sh
+mkdir mykhailo_lopaiev
+cd .\mykhailo_lopaiev\
+init hashicorp/precise64
+vagrant up
+```
+
+Logged into it via SSH:
+
+![Default Vagrant box](./images/vagrant_ssh.png "Default Vagrant box") 
+
+Stopping and deleting the box:
+
+```sh
+vagrant halt
+vagrant destroy
+```
+
+### Making own Vagrant box
+
+Prepping the VM:
+
+Adding user *vagrant* with password "vagrant" and setting paswordless sudo with vagrant ALL=(ALL) NOPASSWD:ALL
+```sh
+useradd vagrant
+passwd vagrant
+visudo /etc/sudoers
+```
+
+Installing Vagrant key:
+
+```sh
+mkdir -p /home/vagrant/.ssh
+chmod 0700 /home/vagrant/.ssh
+wget --no-check-certificate https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub -O /home/vagrant/.ssh/authorized_keys
+chmod 0600 /home/vagrant/.ssh/authorized_keys
+chown -R vagrant /home/vagrant/.ssh
+```
+Packaging the box:
+![My Vagrant box](./images/bulding.png "Packaging") 
+
+Testing the box after it's packaged:
+
+![My Vagrant box](./images/built_box_up "Box is up") 
 
 
 
