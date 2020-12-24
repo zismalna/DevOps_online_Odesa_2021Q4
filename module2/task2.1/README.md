@@ -165,11 +165,12 @@ chmod 0600 /home/vagrant/.ssh/authorized_keys
 chown -R vagrant /home/vagrant/.ssh
 ```
 Packaging the box:
+
 ![My Vagrant box](./images/bulding.png "Packaging") 
 
 Testing the box after it's packaged:
 
-![My Vagrant box](./images/built_box_up "Box is up") 
+![My Vagrant box](./images/built_box_up.png "Box is up") 
 
 
 
