@@ -22,4 +22,4 @@ Attached the volume detached from the last instance and made sure the files are 
 ![Files](./images/still_there.png "Still there")
 
 Created an S3 bucket and uploaded my files there.
-Hosted a static website available at zismalna.com (redirect).
+Hosted a static website available at http://zismalna.com (redirect).
