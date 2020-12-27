@@ -1,5 +1,5 @@
-### Database administration
-# Part 1 - Local MySQL database
+# Database administration
+### Part 1 - Local MySQL database
 
 Installed MySQL Server on Ubuntu VM. Created a database with the following schema:
 
@@ -56,7 +56,7 @@ Querying 'db' table of 'mysql' database:
 
 ![MySQL](./images/query_db.png "DB table query")
 
-# Part 2
+### Part 2
 
 Making backup, deleting a table, and restoring it:
 
@@ -85,7 +85,7 @@ SELECT device.id, device.ddns, device.status, users.device_id, COUNT(users.user)
 mysqldump --databases networking > dump2.sql
 ```
 
-# Part 3 - Amazon DynamoDB
+### Part 3 - Amazon DynamoDB
 
 Created DynamoDB table:
 
