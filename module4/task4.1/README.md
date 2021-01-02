@@ -24,7 +24,7 @@ The target device repiles with ICMP echo reply. While the devices that process I
 
 After deleting IP addresses, PDU fails since ICMP needs L3 to function.
 
-Added more devices as per assgnement:
+Added more devices as per assignment:
 
 ![Hub network](./images/hub_network_2.png "Hub network")
 
@@ -34,7 +34,7 @@ The connection functions in a similar fashion:
 
 ### Switch network
 
-Built a switch-based network, used ICMP to verify connection. The switch works differently, storing the relation between MAC addresses and ports, sending frames only to target port after the dicovery:
+Built a switch-based network, used ICMP to verify connection. The switch works differently, storing the relation between MAC addresses and ports, sending frames only to target port after the discovery:
 
 ![ICMP ping](./images/switch.png "Switch network")
 
