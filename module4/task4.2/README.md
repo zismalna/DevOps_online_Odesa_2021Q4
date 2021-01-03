@@ -3,14 +3,17 @@
 ### Building a corporate network, two 2-floor buildings with 5 PCs on each floor
 
 The topology of this network is rather simple: PCs on each floor in both buildings are connected to the switch located on the same floor using copper wire connection; the swithes are then connected to the router.
-As the router is probably somewhere within organization, let's assume it's located in Building 1 on the second floor. The switches located in the same building are connected to the router using copper wire; switches from the other building are coonected by fiber.
+As the router is probably somewhere within organization, let's assume it's located in Building 1 on the second floor. The switches located in the same building are connected to the router using copper wire; switches from the other building are connected by fiber.
 
 ![Network topology](./images/network1.png "Network")
 
 The router runs a DHCP server, assigning addresses to the client PCs from the following subnets:
 Building 1 Floor 1 - 192.168.0.0/27
+
 Building 1 Floor 2 - 192.168.1.0/27
+
 Building 2 Floor 1 - 192.168.2.0/27
+
 Building 2 Floor 2 - 192.168.3.0/27
 
 ![DHCP bindings](./images/dhcp1.png "DHCP")
