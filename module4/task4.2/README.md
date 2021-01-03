@@ -8,6 +8,7 @@ As the router is probably somewhere within organization, let's assume it's locat
 ![Network topology](./images/network1.png "Network")
 
 The router runs a DHCP server, assigning addresses to the client PCs from the following subnets:
+
 Building 1 Floor 1 - 192.168.0.0/27
 
 Building 1 Floor 2 - 192.168.1.0/27
