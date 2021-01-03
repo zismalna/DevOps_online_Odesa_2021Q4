@@ -1,7 +1,7 @@
 
 # Networking Fundamentals. Task 4.3
 
-Building network topology from 5 PCs, 2 servers, switch, and router as per assignement:
+Building network topology from 5 PCs, 2 servers, switch, and router as per assignment:
 
 ![Network topology](./images/topology.png "Network")
 
@@ -43,7 +43,7 @@ Building configuration...
 
 Adding RIP routing:
 
-![RIP](./images/rip.png "RIP")
+![RIP](./images/RIP.png "RIP")
 
 Testing the connection:
 
