@@ -17,7 +17,7 @@ Building 2 Floor 2 - 192.168.3.0/27
 
 The client devices can talk to each other within their respective subnets, and with devices from other subnets:
 
-![Testing connection](./images/icmp1.png "Testing connectivity")
+![Testing connection](./images/ping1.png "Testing connectivity")
 
 This could be restricted by firewall rules, or ACL, should the need arise.
 
@@ -29,12 +29,19 @@ The PCs on each floor are connected to a floor switch, that separates workgroups
 VLAN tags used are as follows:
 
 vlan 10 - Floor 1 group1; address space 192.168.1.0/24
+
 vlan 20 - Floor 1 group2; address space 192.168.2.0/24
+
 vlan 30 - Floor 2 group1; address space 192.168.3.0/24
+
 vlan 40 - Floor 2 group2; address space 192.168.4.0/24
+
 vlan 50 - Floor 3 group1; address space 192.168.5.0/24
+
 vlan 60 - Floor 3 group2; address space 192.168.6.0/24
+
 vlan 70 - Floor 4 group1; address space 192.168.7.0/24
+
 vlan 80 - Floor 4 group2; address space 192.168.8.0/24
 
 The topology:
@@ -134,6 +141,7 @@ ip dhcp pool floor4_2
 ```
 
 The client devices can talk to each other within their respective subnets, and with devices from other subnets.
+
 The respective Packet Tracer file is 4floors.pkt.
 
 ### Building a corporate network, five single-floor buildings with one workgroup in every building, and 1-port router
@@ -181,10 +189,15 @@ interface GigabitEthernet9/0.60
 The networks go as follows:
 
 Building 1 - vlan 10; address space 192.168.1.0/27
+
 Building 2 - vlan 20; address space 192.168.2.0/27
+
 Building 3 - vlan 30; address space 192.168.3.0/27
+
 Building 4 - vlan 40; address space 192.168.4.0/27
+
 Building 5 - vlan 50; address space 192.168.5.0/27
+
 Building 6 - vlan 10; address space 192.168.6.0/27
 
 The DHCP is configured respectively:
