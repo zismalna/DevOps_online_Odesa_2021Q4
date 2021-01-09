@@ -24,7 +24,7 @@ The respective Packet Tracer file is 4.4.1.pkt
 ### Part 2
 
 Building the network, including 2 subnets, and 2 DNS zones: 192.168.0.0/24 for epam1.com, and 192.168.1.0/24 for epam2.com.
-Two DNS servers serve the respective zones, and the router *gw* provides the L3 cummunication between networks.
+Two DNS servers serve the respective zones, and the router *gw* provides the L3 communication between networks.
 
 ![Network topology](./images/dns_network.png "Network")
 
@@ -42,7 +42,7 @@ The PCs can communicate with the hosts in their zone by querying DNS server for 
 
 Using pc1.epam1.com to reach hosts that belong to epam1.com and epam2.com:
 
-![ICMP2](./images/success2.png "Success"
+![ICMP2](./images/success2.png "Success")
 
 As we can see, the host can reach the hosts in both zones by their FQDN.
 
