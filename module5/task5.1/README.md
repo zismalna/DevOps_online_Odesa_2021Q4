@@ -48,7 +48,7 @@ Example of using filter on .bashrc file:
 
 ![home](./images/ls1.png "home")
 
-### Part 1
+### Part 2
 
 1) The *tree* command can use patterns to highlight specific files in a filetree using a pattern:
 
@@ -81,7 +81,9 @@ file /sbin/init
 
 *-h* shows the information in human-readable format, and -Z displays security information.
 
-5) ![pp.5](./images/something.png "Done")
+5)
+
+ ![pp.5](./images/something.png "Done")
 
 6) Making a file and creating hard and soft links:
 
